@@ -12,6 +12,14 @@
   background-repeat: no-repeat;
 }
 
+.navbar-brand {
+  height: 85px;
+  width: 165px;
+  background: url(../source/name-brand.png);
+  background-repeat: no-repeat;
+  background-size: 150px;
+}
+
 a {
   border: solid 2px transparent;
   padding: 3px 8px 3px 8px;
