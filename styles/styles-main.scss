@@ -5,28 +5,18 @@ $font_family: 'Raleway', sans-serif;
 *{
     font-family: $font_family;
 }
-.main{
+// .main{
+//     height: 100vh;
+//     background-image: url(../source/main-image.png);
+//     background-repeat: no-repeat;
+// }
+.banner{
     height: 100vh;
-    background-image: url(../source/main-image.png);
+    width: 100%;
+    background: url(../source/main-image.png);
+    background-position: top;
+    background-size: cover;
     background-repeat: no-repeat;
-}
-.cafe{
-    height: 100px;
-}
-.brand img{
-    padding-top: 16px;
-    padding-bottom: 17px;
-}
-.col-md-6{
-    display: flex;
-    vertical-align: middle;
-    justify-content:space-around;
-}
-ul{
-    list-style-type: none;
-}
-li{
-    padding-left: 54px;
 }
 a{
     border: solid 2px transparent;
