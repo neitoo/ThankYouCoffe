@@ -4,12 +4,17 @@
 }
 
 .banner {
+  color: #FFF;
   height: 100vh;
   width: 100%;
   background: url(../source/main-image.png);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.banner .navbar {
+  margin: 16px 131px 16px 141px;
 }
 
 .navbar-brand {
@@ -20,15 +25,46 @@
   background-size: 150px;
 }
 
-a {
+.banner .nav li a {
   border: solid 2px transparent;
+  margin-left: 54px;
   padding: 3px 8px 3px 8px;
-  font-size: 24px;
+  font-size: 20px !important;
   color: #FFF !important;
   text-decoration: none !important;
 }
-
-a:hover {
+.banner .nav li a:hover {
   border: solid 2px #FFF;
   border-radius: 10px;
+}
+
+.banner .info p {
+  margin-top: 138px;
+  margin-right: 141px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 47px;
+}
+.banner .info h1 {
+  margin-right: 141px;
+  margin-bottom: 102px;
+  font-size: 90px;
+  font-weight: 300;
+  line-height: 105px;
+}
+.banner .info .menu-btn {
+  margin-top: 102px;
+  margin-right: 141px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  padding: 23px 65px 23px 65px;
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 20px;
+  background-color: #235560 !important;
+}
+.banner .info .menu-btn:hover {
+  color: #FFF;
+  background-color: #1397B4 !important;
 }/*# sourceMappingURL=styles-main.css.map */
