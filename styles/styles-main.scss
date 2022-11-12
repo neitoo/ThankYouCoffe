@@ -2,14 +2,23 @@
 
 $font_family: 'Raleway', sans-serif;
 
-*{
+html,body{
     font-family: $font_family;
 }
-// .main{
-//     height: 100vh;
-//     background-image: url(../source/main-image.png);
-//     background-repeat: no-repeat;
-// }
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 141px;
+    margin-right: 141px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand img{
+    width: 160px;
+    height: 80px;
+}
 .banner{
     color: #FFF;
     height: 100vh;
@@ -19,62 +28,23 @@ $font_family: 'Raleway', sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.banner .navbar{
-    margin: 16px 131px 16px 141px;
+.header .navbar ul{
+    display: flex;
+    list-style: none;
 }
-.navbar-brand{
-    height: 85px;
-    width: 165px;
-    background: url(../source/name-brand.png);
-    background-repeat: no-repeat;
-    background-size: 150px;
+.header .navbar ul a {
+    font-family: $font_family;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    border: transparent 2px solid;
+    border-radius: 10px;
+    padding: 3px 8px 3px 8px;
 }
-.banner .nav li{
-    a{
-        border: solid 2px transparent;
-        margin-left: 54px;
-        padding: 3px 8px 3px 8px;
-        font-size: 20px !important;
-        color: #FFF !important;
-        text-decoration: none !important;
-    }
-    a:hover{
-        border: solid 2px #FFF;
-        border-radius: 10px;
-    }
-} 
-
-.banner .info{
-    p{
-        margin-top: 138px;
-        margin-right: 141px;
-        font-size: 40px;
-        font-weight: 500;
-        line-height: 47px;
-    }
-    h1{
-        margin-right: 141px;
-        margin-bottom: 102px;
-        font-size: 90px;
-        font-weight: 300;
-        line-height: 105px;
-    }
-    .menu-btn{
-        margin-top: 102px;
-        margin-right: 141px;
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 28px;
-        padding: 23px 65px 23px 65px;
-        color: #FFF;
-        text-decoration: none;
-        border-radius: 20px;
-        background-color: #235560 !important;
-
-    }
-    .menu-btn:hover{
-        color: #FFF;
-        background-color: #1397B4 !important;
-    }
-    
+.header .navbar ul a:hover{
+    border: #FFF 2px solid;
+}
+.header .navbar ul li {
+    margin-left: 34px;
 }
