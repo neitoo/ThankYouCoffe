@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
 
-$font_family: 'Raleway', sans-serif;
+$font-raleway: 'Raleway', sans-serif;
 
 html,body{
-    font-family: $font_family;
+    font-family: $font-raleway;
+}
+.wrapper{
+    .header, .name-site, .btn-menu{
+        margin-left: 141px;
+        margin-right: 141px;
+    }
+    
 }
 .header{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 141px;
-    margin-right: 141px;
     padding-top: 16px;
     padding-bottom: 16px;
     justify-content: space-between;
@@ -33,7 +38,7 @@ html,body{
     list-style: none;
 }
 .header .navbar ul a {
-    font-family: $font_family;
+    font-family: $font-raleway;
     font-weight: 400;
     font-size: 20px;
     text-decoration: none;
@@ -47,4 +52,39 @@ html,body{
 }
 .header .navbar ul li {
     margin-left: 34px;
+}
+.panel{
+    padding-top: 138px;
+    display: flex;
+    text-align: end;
+    align-items:flex-end;
+    flex-direction: column;
+}
+.name-site p{
+    font-family: $font-raleway;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 46px;
+}
+.name-site h1{
+    font-family: $font-raleway;
+    font-size: 90px;
+    font-weight: 300;
+    line-height: 105px;
+}
+.btn-menu{
+    margin-top: 102px;
+    font-family: $font-raleway;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    padding: 23px 65px;
+    border-radius: 20px;
+    background-color: #235560;
+}
+.btn-menu:hover{
+    background-color: #1397B4;
 }

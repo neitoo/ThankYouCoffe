@@ -3,11 +3,14 @@ html, body {
   font-family: "Raleway", sans-serif;
 }
 
+.wrapper .header, .wrapper .name-site, .wrapper .btn-menu {
+  margin-left: 141px;
+  margin-right: 141px;
+}
+
 .header {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 141px;
-  margin-right: 141px;
   padding-top: 16px;
   padding-bottom: 16px;
   justify-content: space-between;
@@ -51,4 +54,44 @@ html, body {
 
 .header .navbar ul li {
   margin-left: 34px;
+}
+
+.panel {
+  padding-top: 138px;
+  display: flex;
+  text-align: end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.name-site p {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 46px;
+}
+
+.name-site h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 90px;
+  font-weight: 300;
+  line-height: 105px;
+}
+
+.btn-menu {
+  margin-top: 102px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-decoration: none;
+  color: #FFF;
+  padding: 23px 65px;
+  border-radius: 20px;
+  background-color: #235560;
+}
+
+.btn-menu:hover {
+  background-color: #1397B4;
 }/*# sourceMappingURL=styles-main.css.map */
