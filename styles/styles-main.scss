@@ -6,12 +6,13 @@ $btn-menu-color: #235560;
 $btn-menu-color-hover: #1397B4;
 $infocafe-bg: #F1F1F1;
 $color-black: #000000;
+$incafe-bg: #E3DACD;
 
 html,body{
     font-family: $font-raleway;
 }
 .wrapper{
-    .header, .name-site, .btn-menu, .infocafe{
+    .header, .name-site, .btn-menu, .infocafe, .incafe{
         margin-left: 141px;
         margin-right: 141px;
     }
@@ -108,10 +109,6 @@ html,body{
     width: 100%;
     justify-content:space-around;
 }
-.infocafe img{
-    width: 460px;
-    height: 460px;
-}
 .text-infocafe{
     display: flex;
     flex-direction: column;
@@ -119,13 +116,60 @@ html,body{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.info-1{
+.text-infocafe h2{
     font-weight: 700;
     font-size: 40px;
     line-height: 150%;
 }
-.info-2{
+.text-infocafe p{
     font-weight: 400;
     font-size: 32px;
     line-height: 115%;
+}
+.bg-incafe{
+    font-family: $font-raleway;
+    color: $color-black;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: $incafe-bg;
+    align-items: center;
+}
+.incafe{
+    display: flex;
+    height: 460px;
+    width: 100%;
+    justify-content:space-around;
+}
+.text-incafe{
+    display: flex;
+    flex-direction: column;
+    width: 660px;
+}
+.text-incafe h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.text-incafe p{
+    display: flex;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    margin: 47px 0 0 0px;
+}
+.text-incafe img{
+    margin-right: 35px;
+}
+.list-incafe {
+    .li-1{
+        list-style-image: url(../source/sofa-icon.svg);
+    }
+    .li-2{
+        list-style-image: url(../source/tablet-icon.svg);
+    }
+    .li-3{
+        list-style-image: url(../source/dessert-icon.svg);
+    }
 }

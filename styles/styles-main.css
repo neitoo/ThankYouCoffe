@@ -3,7 +3,7 @@ html, body {
   font-family: "Raleway", sans-serif;
 }
 
-.wrapper .header, .wrapper .name-site, .wrapper .btn-menu, .wrapper .infocafe {
+.wrapper .header, .wrapper .name-site, .wrapper .btn-menu, .wrapper .infocafe, .wrapper .incafe {
   margin-left: 141px;
   margin-right: 141px;
 }
@@ -113,11 +113,6 @@ html, body {
   justify-content: space-around;
 }
 
-.infocafe img {
-  width: 460px;
-  height: 460px;
-}
-
 .text-infocafe {
   display: flex;
   flex-direction: column;
@@ -126,14 +121,66 @@ html, body {
   flex-wrap: wrap;
 }
 
-.info-1 {
+.text-infocafe h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 150%;
 }
 
-.info-2 {
+.text-infocafe p {
   font-weight: 400;
   font-size: 32px;
   line-height: 115%;
+}
+
+.bg-incafe {
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #E3DACD;
+  align-items: center;
+}
+
+.incafe {
+  display: flex;
+  height: 460px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.text-incafe {
+  display: flex;
+  flex-direction: column;
+  width: 660px;
+}
+
+.text-incafe h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.text-incafe p {
+  display: flex;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+  margin: 47px 0 0 0px;
+}
+
+.text-incafe img {
+  margin-right: 35px;
+}
+
+.list-incafe .li-1 {
+  list-style-image: url(../source/sofa-icon.svg);
+}
+.list-incafe .li-2 {
+  list-style-image: url(../source/tablet-icon.svg);
+}
+.list-incafe .li-3 {
+  list-style-image: url(../source/dessert-icon.svg);
 }/*# sourceMappingURL=styles-main.css.map */
