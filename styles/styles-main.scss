@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
 
 $font-raleway: 'Raleway', sans-serif;
+$color-white: #FFF;
+$btn-menu-color: #235560;
+$btn-menu-color-hover: #1397B4;
+$infocafe-bg: #F1F1F1;
+$color-black: #000000;
 
 html,body{
     font-family: $font-raleway;
 }
 .wrapper{
-    .header, .name-site, .btn-menu{
+    .header, .name-site, .btn-menu, .infocafe{
         margin-left: 141px;
         margin-right: 141px;
     }
@@ -25,7 +30,7 @@ html,body{
     height: 80px;
 }
 .banner{
-    color: #FFF;
+    color: $color-white;
     height: 100vh;
     width: 100%;
     background: url(../source/main-image.png);
@@ -42,13 +47,13 @@ html,body{
     font-weight: 400;
     font-size: 20px;
     text-decoration: none;
-    color: #ffffff;
+    color: $color-white;
     border: transparent 2px solid;
     border-radius: 10px;
     padding: 3px 8px 3px 8px;
 }
 .header .navbar ul a:hover{
-    border: #FFF 2px solid;
+    border: $color-white 2px solid;
 }
 .header .navbar ul li {
     margin-left: 34px;
@@ -80,11 +85,47 @@ html,body{
     line-height: 28px;
     text-align: center;
     text-decoration: none;
-    color: #FFF;
+    color: $color-white;
     padding: 23px 65px;
     border-radius: 20px;
-    background-color: #235560;
+    background-color: $btn-menu-color;
 }
 .btn-menu:hover{
-    background-color: #1397B4;
+    background-color: $btn-menu-color-hover;
+}
+.bg-infocafe{
+    font-family: $font-raleway;
+    color: $color-black;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: $infocafe-bg;
+    align-items: center;
+}
+.infocafe{
+    display: flex;
+    height: 460px;
+    width: 100%;
+    justify-content:space-around;
+}
+.infocafe img{
+    width: 460px;
+    height: 460px;
+}
+.text-infocafe{
+    display: flex;
+    flex-direction: column;
+    width: 660px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.info-1{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 150%;
+}
+.info-2{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 115%;
 }
