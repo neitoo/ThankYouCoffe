@@ -13,10 +13,14 @@ $color-name-assortiment: #DDC198;
 $color-circle-price: #F5CB8E;
 $color-bg-footer: #300E04;
 
-html,body{
-    font-family: $font-raleway;
+@mixin bg(){
+    display: flex;
+    height: 100vh;
+    width: 100%;
 }
+
 .wrapper{
+    font-family: $font-raleway;
     .header, .name-site, .btn-menu, .infocafe, .incafe, .atmosphere, .menu, .footer-elements{
         margin-left: 141px;
         margin-right: 141px;
@@ -47,22 +51,24 @@ html,body{
 .header .navbar ul{
     display: flex;
     list-style: none;
-}
-.header .navbar ul a {
-    font-family: $font-raleway;
-    font-weight: 400;
-    font-size: 20px;
-    text-decoration: none;
-    color: $color-white;
-    border: transparent 2px solid;
-    border-radius: 10px;
-    padding: 3px 8px 3px 8px;
-}
-.header .navbar ul a:hover{
-    border: $color-white 2px solid;
-}
-.header .navbar ul li {
-    margin-left: 34px;
+
+    a {
+        font-weight: 400;
+        font-size: 20px;
+        text-decoration: none;
+        color: $color-white;
+        border: transparent 2px solid;
+        border-radius: 10px;
+        padding: 3px 8px 3px 8px;
+
+        &:hover{
+            border: $color-white 2px solid;
+        }
+    }
+
+    li {
+        margin-left: 34px;
+    }
 }
 .panel{
     padding-top: 138px;
@@ -71,21 +77,22 @@ html,body{
     align-items:flex-end;
     flex-direction: column;
 }
-.name-site p{
-    font-family: $font-raleway;
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 46px;
+.name-site 
+{
+    p{
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 46px;
+    } 
+    h1{
+        font-size: 90px;
+        font-weight: 300;
+        line-height: 105px;
+    }
 }
-.name-site h1{
-    font-family: $font-raleway;
-    font-size: 90px;
-    font-weight: 300;
-    line-height: 105px;
-}
+
 .btn-menu{
     margin-top: 102px;
-    font-family: $font-raleway;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -95,16 +102,14 @@ html,body{
     padding: 23px 65px;
     border-radius: 20px;
     background-color: $btn-menu-color;
-}
-.btn-menu:hover{
-    background-color: $btn-menu-color-hover;
+
+    &:hover{
+        background-color: $btn-menu-color-hover;
+    }
 }
 .bg-infocafe{
-    font-family: $font-raleway;
+    @include bg();
     color: $color-black;
-    display: flex;
-    height: 100vh;
-    width: 100%;
     background-color: $grey-bg;
     align-items: center;
 }
@@ -113,9 +118,10 @@ html,body{
     height: 460px;
     width: 100%;
     justify-content:space-around;
-}
-.infocafe img{
-    border-radius: 20px;
+
+    img{
+        border-radius: 20px;
+    }
 }
 
 .text-infocafe{
@@ -124,23 +130,21 @@ html,body{
     width: 660px;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-.text-infocafe h2{
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 150%;
-}
-.text-infocafe p{
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 115%;
+
+    h2{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 150%;
+    }
+    p{
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 115%;
+    }
 }
 .bg-incafe{
-    font-family: $font-raleway;
+    @include bg();
     color: $color-black;
-    display: flex;
-    height: 100vh;
-    width: 100%;
     background-color: $beige-bg;
     align-items: center;
 }
@@ -149,37 +153,36 @@ html,body{
     height: 460px;
     width: 100%;
     justify-content:space-around;
-}
-.incafe img{
-    border-radius: 20px;
+
+    img{
+        border-radius: 20px;
+    }
 }
 .text-incafe{
     display: flex;
     flex-direction: column;
     width: 660px;
-}
-.text-incafe h2{
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 40px;
-    text-transform: uppercase;
-}
-.text-incafe p{
-    display: flex;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 27px;
-    margin: 47px 0 0 0px;
-}
-.text-incafe img{
-    margin-right: 35px;
+
+    h2{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+    p{
+        display: flex;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 27px;
+        margin: 47px 0 0 0px;
+    }
+    img{
+        margin-right: 35px;
+    }
 }
 .bg-atmosphere{
-    font-family: $font-raleway;
+    @include bg();
     color: $color-black;
-    display: flex;
-    height: 100vh;
-    width: 100%;
     background-color: $grey-bg;
     align-items:flex-start;
     justify-content: center;
@@ -199,35 +202,34 @@ html,body{
     justify-content: center;
     margin-top: 61px;
     margin-bottom: 23px;
-}
-.text-atmosphere h2{
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 40px;
-    text-transform: uppercase;
-}
-.text-atmosphere p{
-    font-family: $font-caveat;
-    color: $color-caveat;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 30px;
-    text-align: center;
+
+    h2{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+    p{
+        font-family: $font-caveat;
+        color: $color-caveat;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 30px;
+        text-align: center;
+    }
 }
 .gallery-atmosphere{
     width: 100%;
     display: flex;
     justify-content: space-between;
-}
-.gallery-atmosphere img{
-    border-radius: 20px;
+
+    img{
+        border-radius: 20px;
+    }
 }
 .bg-menu-new{
-    font-family: $font-raleway;
+    @include bg();
     color: $color-black;
-    display: flex;
-    height: 100vh;
-    width: 100%;
     background-color: $beige-bg;
     align-items:flex-start;
     justify-content: center;
@@ -247,12 +249,13 @@ html,body{
     justify-content: center;
     margin-top: 61px;
     margin-bottom: 97px;
-}
-.text-menu h2{
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 40px;
-    text-transform: uppercase;
+
+    h2{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
 }
 .assortiment{
     width: 100%;
@@ -273,13 +276,13 @@ html,body{
     background: $color-name-assortiment;
     box-shadow: inset -50px -50px 118px rgba(255, 255, 255, 0.25), inset 50px 50px 118px rgba(0, 0, 0, 0.25);
     border-radius: 0 0 20px 20px;
-}
-.name p{
-    margin-top: 161px;
-    font-family: $font-raleway;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 37px;
+
+    p{
+        margin-top: 161px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 37px;
+    }
 }
 .circle-price{
     margin: calc(-130px/2) auto;
@@ -290,21 +293,19 @@ html,body{
     width: 130px;
     height: 130px;
     background-color: $color-circle-price;
-}
-.circle-price p{
-    font-family: $font-raleway;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 37px;
-}
-.circle-price span{
-    font-family: $font-raleway;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 18px;
+
+    p{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 37px;
+    }
+    span{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+    }
 }
 .bg-footer{
-    font-family: $font-raleway;
     color: $color-white;
     display: flex;
     height: 21vh;
@@ -326,7 +327,6 @@ html,body{
 }
 .address-footer{
     p span{
-        font-family: $font-raleway;
         font-weight: 700;
         font-size: 20px;
         line-height: 23px;
@@ -334,7 +334,6 @@ html,body{
         text-transform: uppercase;
     }
     p{
-        font-family: $font-raleway;
         font-weight: 400;
         font-size: 20px;
         line-height: 23px;
@@ -347,15 +346,15 @@ html,body{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-}
-.contacts p{
-    display: flex;
-    align-items: center;
-    font-family: $font-raleway;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 18px;
-}
-.contacts img{
-    margin-right: 8px;
+
+    p{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    img{
+        margin-right: 8px;
+    }
 }

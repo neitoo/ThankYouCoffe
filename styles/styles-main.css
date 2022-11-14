@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Raleway:wght@300;400;500;700&display=swap");
-html, body {
+.wrapper {
   font-family: "Raleway", sans-serif;
 }
-
 .wrapper .header, .wrapper .name-site, .wrapper .btn-menu, .wrapper .infocafe, .wrapper .incafe, .wrapper .atmosphere, .wrapper .menu, .wrapper .footer-elements {
   margin-left: 141px;
   margin-right: 141px;
@@ -36,9 +35,7 @@ html, body {
   display: flex;
   list-style: none;
 }
-
 .header .navbar ul a {
-  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 20px;
   text-decoration: none;
@@ -47,11 +44,9 @@ html, body {
   border-radius: 10px;
   padding: 3px 8px 3px 8px;
 }
-
 .header .navbar ul a:hover {
   border: #FFF 2px solid;
 }
-
 .header .navbar ul li {
   margin-left: 34px;
 }
@@ -65,14 +60,11 @@ html, body {
 }
 
 .name-site p {
-  font-family: "Raleway", sans-serif;
   font-size: 40px;
   font-weight: 500;
   line-height: 46px;
 }
-
 .name-site h1 {
-  font-family: "Raleway", sans-serif;
   font-size: 90px;
   font-weight: 300;
   line-height: 105px;
@@ -80,7 +72,6 @@ html, body {
 
 .btn-menu {
   margin-top: 102px;
-  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -91,17 +82,15 @@ html, body {
   border-radius: 20px;
   background-color: #235560;
 }
-
 .btn-menu:hover {
   background-color: #1397B4;
 }
 
 .bg-infocafe {
-  font-family: "Raleway", sans-serif;
-  color: #000000;
   display: flex;
   height: 100vh;
   width: 100%;
+  color: #000000;
   background-color: #F1F1F1;
   align-items: center;
 }
@@ -112,7 +101,6 @@ html, body {
   width: 100%;
   justify-content: space-around;
 }
-
 .infocafe img {
   border-radius: 20px;
 }
@@ -124,13 +112,11 @@ html, body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 .text-infocafe h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 150%;
 }
-
 .text-infocafe p {
   font-weight: 400;
   font-size: 32px;
@@ -138,11 +124,10 @@ html, body {
 }
 
 .bg-incafe {
-  font-family: "Raleway", sans-serif;
-  color: #000000;
   display: flex;
   height: 100vh;
   width: 100%;
+  color: #000000;
   background-color: #E3DACD;
   align-items: center;
 }
@@ -153,7 +138,6 @@ html, body {
   width: 100%;
   justify-content: space-around;
 }
-
 .incafe img {
   border-radius: 20px;
 }
@@ -163,14 +147,12 @@ html, body {
   flex-direction: column;
   width: 660px;
 }
-
 .text-incafe h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
 }
-
 .text-incafe p {
   display: flex;
   font-weight: 400;
@@ -178,17 +160,15 @@ html, body {
   line-height: 27px;
   margin: 47px 0 0 0px;
 }
-
 .text-incafe img {
   margin-right: 35px;
 }
 
 .bg-atmosphere {
-  font-family: "Raleway", sans-serif;
-  color: #000000;
   display: flex;
   height: 100vh;
   width: 100%;
+  color: #000000;
   background-color: #F1F1F1;
   align-items: flex-start;
   justify-content: center;
@@ -211,14 +191,12 @@ html, body {
   margin-top: 61px;
   margin-bottom: 23px;
 }
-
 .text-atmosphere h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
 }
-
 .text-atmosphere p {
   font-family: "Caveat";
   color: #D9BC92;
@@ -233,17 +211,15 @@ html, body {
   display: flex;
   justify-content: space-between;
 }
-
 .gallery-atmosphere img {
   border-radius: 20px;
 }
 
 .bg-menu-new {
-  font-family: "Raleway", sans-serif;
-  color: #000000;
   display: flex;
   height: 100vh;
   width: 100%;
+  color: #000000;
   background-color: #E3DACD;
   align-items: flex-start;
   justify-content: center;
@@ -266,7 +242,6 @@ html, body {
   margin-top: 61px;
   margin-bottom: 97px;
 }
-
 .text-menu h2 {
   font-weight: 700;
   font-size: 40px;
@@ -294,10 +269,8 @@ html, body {
   box-shadow: inset -50px -50px 118px rgba(255, 255, 255, 0.25), inset 50px 50px 118px rgba(0, 0, 0, 0.25);
   border-radius: 0 0 20px 20px;
 }
-
 .name p {
   margin-top: 161px;
-  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 37px;
@@ -313,23 +286,18 @@ html, body {
   height: 130px;
   background-color: #F5CB8E;
 }
-
 .circle-price p {
-  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 37px;
 }
-
 .circle-price span {
-  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
 }
 
 .bg-footer {
-  font-family: "Raleway", sans-serif;
   color: #FFF;
   display: flex;
   height: 21vh;
@@ -353,7 +321,6 @@ html, body {
 }
 
 .address-footer p span {
-  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -361,7 +328,6 @@ html, body {
   text-transform: uppercase;
 }
 .address-footer p {
-  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
@@ -375,16 +341,13 @@ html, body {
   align-items: center;
   flex-wrap: wrap;
 }
-
 .contacts p {
   display: flex;
   align-items: center;
-  font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
 }
-
 .contacts img {
   margin-right: 8px;
 }/*# sourceMappingURL=styles-main.css.map */
