@@ -138,8 +138,11 @@
   width: 100%;
   justify-content: space-around;
 }
-.incafe img {
+.incafe .img-incafe {
   border-radius: 20px;
+}
+.incafe .ico-1, .incafe .ico-2, .incafe .ico-3 {
+  width: 60px;
 }
 
 .text-incafe {

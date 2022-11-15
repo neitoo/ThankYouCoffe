@@ -154,8 +154,12 @@ $color-bg-footer: #300E04;
     width: 100%;
     justify-content:space-around;
 
-    img{
+    .img-incafe{
         border-radius: 20px;
+    }
+
+    .ico-1, .ico-2, .ico-3{
+        width: 60px;
     }
 }
 .text-incafe{
