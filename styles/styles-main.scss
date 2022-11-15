@@ -158,9 +158,6 @@ $color-bg-footer: #300E04;
         border-radius: 20px;
     }
 
-    .ico-1, .ico-2, .ico-3{
-        width: 60px;
-    }
 }
 .text-incafe{
     display: flex;
@@ -180,8 +177,9 @@ $color-bg-footer: #300E04;
         line-height: 27px;
         margin: 47px 0 0 0px;
     }
-    img{
+    .ico-1, .ico-2, .ico-3{
         margin-right: 35px;
+        width: 60px
     }
 }
 .bg-atmosphere{

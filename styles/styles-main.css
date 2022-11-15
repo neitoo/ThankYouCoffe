@@ -141,9 +141,6 @@
 .incafe .img-incafe {
   border-radius: 20px;
 }
-.incafe .ico-1, .incafe .ico-2, .incafe .ico-3 {
-  width: 60px;
-}
 
 .text-incafe {
   display: flex;
@@ -163,8 +160,9 @@
   line-height: 27px;
   margin: 47px 0 0 0px;
 }
-.text-incafe img {
+.text-incafe .ico-1, .text-incafe .ico-2, .text-incafe .ico-3 {
   margin-right: 35px;
+  width: 60px;
 }
 
 .bg-atmosphere {
