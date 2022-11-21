@@ -36,6 +36,10 @@ body {
   height: 118px;
   text-align: right;
 }
+.header .icon img {
+  width: 160px;
+  height: 80px;
+}
 .header .icon p {
   font-weight: 400;
   font-size: 24px;

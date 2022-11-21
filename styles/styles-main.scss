@@ -19,10 +19,8 @@ $color-bg-footer: #300E04;
     width: 100%;
 }
 
-*{
-    font-family: $font-raleway !important;
-}
 .wrapper{
+    font-family: $font-raleway;
     .header, .name-site, .btn-menu, .infocafe, .incafe, .atmosphere, .menu, .footer-elements{
         margin-left: 141px;
         margin-right: 141px;
@@ -214,7 +212,7 @@ $color-bg-footer: #300E04;
         text-transform: uppercase;
     }
     p{
-        font-family: $font-caveat !important;
+        font-family: $font-caveat;
         color: $color-caveat;
         font-weight: 400;
         font-size: 40px;

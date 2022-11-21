@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Raleway:wght@300;400;500;700&display=swap");
-* {
-  font-family: "Raleway", sans-serif !important;
+.wrapper {
+  font-family: "Raleway", sans-serif;
 }
-
 .wrapper .header, .wrapper .name-site, .wrapper .btn-menu, .wrapper .infocafe, .wrapper .incafe, .wrapper .atmosphere, .wrapper .menu, .wrapper .footer-elements {
   margin-left: 141px;
   margin-right: 141px;
@@ -200,7 +199,7 @@
   text-transform: uppercase;
 }
 .text-atmosphere p {
-  font-family: "Caveat" !important;
+  font-family: "Caveat";
   color: #D9BC92;
   font-weight: 400;
   font-size: 40px;
