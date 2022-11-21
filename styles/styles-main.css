@@ -200,7 +200,7 @@
   text-transform: uppercase;
 }
 .text-atmosphere p {
-  font-family: "Caveat";
+  font-family: "Caveat" !important;
   color: #D9BC92;
   font-weight: 400;
   font-size: 40px;
