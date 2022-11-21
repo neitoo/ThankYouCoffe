@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Raleway:wght@300;400;500;700&display=swap");
+* {
+  font-family: "Raleway", sans-serif !important;
+}
+
+body {
+  background-color: #E3DACD;
+}
+
+.header {
+  display: flex;
+  padding: 16px 141px 16px 141px;
+  background-color: #300E04;
+  flex-direction: row;
+}
+.header .navbar, .header .icon {
+  align-self: center;
+  height: 100%;
+}
+.header a {
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+  color: #FFF;
+  border: transparent 2px solid;
+  border-radius: 10px;
+  padding: 3px 8px 3px 8px;
+}
+.header a:hover, .header a.active {
+  border: #FFF 2px solid;
+}
+.header .icon {
+  margin-left: calc(45% - 147px);
+  margin-right: auto;
+  width: 160px;
+  height: 118px;
+  text-align: right;
+}
+.header .icon p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFF;
+}
+
+.wrapper {
+  margin-left: 141px;
+  margin-right: 141px;
+}
+
+.name-menu-coffee {
+  text-align: center;
+  background-color: #FFF;
+}
+.name-menu-coffee p {
+  font-family: "Caveat" !important;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  color: #D9BC92;
+}
+.name-menu-coffee h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+}/*# sourceMappingURL=styles-menu-page.css.map */

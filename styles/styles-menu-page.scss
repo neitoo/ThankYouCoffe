@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Raleway:wght@300;400;500;700&display=swap');
+
+$font-raleway: 'Raleway', sans-serif;
+$font-caveat: 'Caveat';
+$color-bg-header: #300E04;
+$color-white: #FFF;
+$color-caveat: #D9BC92;
+$btn-menu-color: #235560;
+$btn-menu-color-hover: #1397B4;
+$grey-bg: #F1F1F1;
+$color-black: #000000;
+$beige-bg: #E3DACD;
+$color-name-assortiment: #DDC198;
+$color-circle-price: #F5CB8E;
+
+*{
+    font-family: $font-raleway !important;
+}
+body{
+    background-color: $beige-bg;
+}
+.header{
+    display: flex;
+    padding: 16px 141px 16px 141px;
+    background-color: $color-bg-header;
+    flex-direction: row;
+    .navbar, .icon{
+        align-self: center;
+        height: 100%;
+    }
+    a {
+        font-weight: 400;
+        font-size: 20px;
+        text-decoration: none;
+        color: $color-white;
+        border: transparent 2px solid;
+        border-radius: 10px;
+        padding: 3px 8px 3px 8px;
+
+        &:hover, &.active{
+            border: $color-white 2px solid;
+        }
+    }
+    .icon{
+        margin-left: calc(45% - 147px);
+        margin-right: auto;
+        width: 160px;
+        height: 118px;
+        text-align: right;
+        p{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            color: $color-white;
+        }
+    }
+}
+.wrapper{
+    margin-left: 141px;
+    margin-right: 141px;
+    
+}
+.name-menu-coffee{
+    text-align: center;
+    background-color: $color-white;
+    p{
+        font-family: $font-caveat !important;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 50px;
+        color: $color-caveat;
+    }
+    h2{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+    }
+}

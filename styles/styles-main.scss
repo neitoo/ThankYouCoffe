@@ -19,8 +19,10 @@ $color-bg-footer: #300E04;
     width: 100%;
 }
 
+*{
+    font-family: $font-raleway !important;
+}
 .wrapper{
-    font-family: $font-raleway;
     .header, .name-site, .btn-menu, .infocafe, .incafe, .atmosphere, .menu, .footer-elements{
         margin-left: 141px;
         margin-right: 141px;
