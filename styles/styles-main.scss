@@ -212,7 +212,7 @@ $color-bg-footer: #300E04;
         text-transform: uppercase;
     }
     p{
-        font-family: $font-caveat;
+        font-family: $font-caveat !important;
         color: $color-caveat;
         font-weight: 400;
         font-size: 40px;
